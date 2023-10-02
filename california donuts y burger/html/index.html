@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="..\css\style.css">
+    <title>california donuts & burger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="wrap-header-hero">
+        <header class="main-header">
+            <div class="header-wrap">
+                <div class="wrap-logo-header">
+                    <div class="nav-img-left">
+                        <a class="logo-header" href="../html/index.html"> californiaDonuts </a>
+                    </div>
+                </div>
+                <div class="wrap-nav-header">
+                    <nav class="nav-header">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="toggle-menu">
+                                <img
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM2OCAxNTQuNjY3OTY5aC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zNjggMzJoLTM1MmMtOC44MzIwMzEgMC0xNi03LjE2Nzk2OS0xNi0xNnM3LjE2Nzk2OS0xNiAxNi0xNmgzNTJjOC44MzIwMzEgMCAxNiA3LjE2Nzk2OSAxNiAxNnMtNy4xNjc5NjkgMTYtMTYgMTZ6bTAgMCIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM2OCAyNzcuMzMyMDMxaC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiPjwvcGF0aD48L2c+PC9zdmc+" />
+                            </i>
+                        </label>
+
+                        <ul class="main-menu">
+                            <li class="menu-item"><a href="../html/index.html">Inicio</a></li>
+                            <li class="menu-item"><a href="../html/nosotros.html">Nosotros</a></li>
+                            <li class="menu-item"><a href="">Reseña</a></li>
+                        </ul>
+                        <div class="carrito">
+                            <img onclick="toggleCart()" class="cart" src="../img/logo/cart.png" alt="">
+                            <p class="count-product">0</p>
+                        </div>
+                        <div class="cart-products" id="products-id">
+                            <p class="close-btn" onclick="closeBtn()">X</p>
+                            <h3>Carrito</h3>
+                            <div class="card-items">
+                            </div>
+                            <h2>Total: Bs<strong class="price-total">0</strong></h2>
+                            <button onclick="procederPedido()">Hacer Pedido</button>
+                        </div>
+                        <script>
+                            function showCart(x) {
+                                document.getElementById("products-id").style.display = "block";
+                            }
+                            function closeBtn() {
+                                document.getElementById("products-id").style.display = "none";
+                            }
+                        </script>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="scrol">
+
+        </div>
+        <script src="../js/menu.js"></script>
+        <main class="main-section">
+            <section class="hero-home-page">
+                <div class="wrap-hero-home-page">
+                    <h1>
+                        california donuts</h1>
+                    <p>
+                        ¡Bienvenidos a nuestro emocionante mundo de sabor y delicias! En nuestro restaurante de comida
+                        rápida, las hamburguesas y las donas son las estrellas indiscutibles. Nuestro equipo se esfuerza
+                        por brindarte un servicio amable y eficiente. Mantente atento a nuestras promociones y eventos
+                        especiales. Gracias por elegirnos como tu destino culinario, esperamos que disfrutes de cada
+                        visita a nuestro restaurante único. ¡Bienvenido! </p>
+                </div>
+            </section>
+    </div>
+
+    <!-- tarjeta de comida -->
+    <section class="wrap-section">
+        <div class="wrap-title-section">
+            <h2>CATEGORIA DEL MENU</h2>
+        </div>
+        <div class="slider">
+            <button id="prevBtn" class="slider-btn slider-btn--left">←</button>
+
+            <div class="column-5 columns">
+                <div style="background: url(../img/Donuts/Donut_Pack_Especial8.PNG)center;
+                background-size: cover;" class="tarjeta-rest">
+                    <div class="wrap-text_tarjeta-rest">
+                        <h3>Donuts</h3>
+                        <p>Endulza tu día con nuestra selección de donuts artesanales, elaborados con cariño y
+                            creatividad. Cada bocado es una explosión de dulzura y felicidad.</p>
+                        <div class="cta-wrap_tarjeta-rest">
+                            <div class="precio_tarjeta-rest">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: url(../img/Burgers/Burger_Clasica.PNG)center; background-size: cover;"
+                    class="tarjeta-rest">
+                    <div class="wrap-text_tarjeta-rest">
+                        <h3>Hamburguesas</h3>
+                        <p>Disfruta de nuestras jugosas hamburguesas gourmet, creadas artesanalmente con ingredientes
+                            frescos para una experiencia de sabor auténtica. Cada bocado es una muestra de tradición y
+                            calidad.</p>
+                        <div class="cta-wrap_tarjeta-rest">
+                            <div class="precio_tarjeta-rest">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: url(../img/Platos_Especiales/Lomo_A_LA_Paila.PNG)center;
+                background-size: cover;" class="tarjeta-rest">
+                    <div class="wrap-text_tarjeta-rest">
+                        <h3>Platos Especiales</h3>
+                        <p>Nuestra colección de platos especiales es un tributo a la gastronomía refinada. Con
+                            ingredientes de primera calidad y una ejecución magistral, cada plato es una obra maestra
+                            culinaria.</p>
+                        <div class="cta-wrap_tarjeta-rest">
+                            <div class="precio_tarjeta-rest">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: url(../img/Tex_Mex/Quesadillas.PNG)center;
+                background-size: cover;" class="tarjeta-rest">
+                    <div class="wrap-text_tarjeta-rest">
+                        <h3>Tex Mex</h3>
+                        <p>Embárcate en un viaje culinario hacia el corazón de Texas y México con nuestro menú Tex-Mex.
+                            Sabores audaces y auténticos se combinan en platos que te transportarán a tierras lejanas.
+                        </p>
+                        <div class="cta-wrap_tarjeta-rest">
+                            <div class="precio_tarjeta-rest">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: url(../img/Sandwiches/Sandwich_De_Res.PNG)center;
+                background-size: cover;" class="tarjeta-rest">
+                    <div class="wrap-text_tarjeta-rest">
+                        <h3>Sandwiches</h3>
+                        <p>Deléitate con una variedad de sandwiches hechos a medida, desde clásicos reconfortantes hasta
+                            creaciones modernas. Cada mordisco es una sinfonía de sabores entre dos rebanadas.</p>
+                        <div class="cta-wrap_tarjeta-rest">
+                            <div class="precio_tarjeta-rest">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="nextBtn" class="slider-btn slider-btn--right">→</button>
+        <script src="../js/deslizamineto.js"></script>
+    </section>
+
+    <!-- menu del restaurante -->
+    <section class="menu contenedor">
+        <h2 class="text-menu">Menú</h2>
+        <div class="botones-productos">
+            <button class="todos btn btn-rojo">Todos</button>
+            <button class="burguers btn btn-rojo">Hamburguesas</button>
+            <button class="donuts btn btn-rojo">Donuts</button>
+            <button class="sandwichs btn btn-rojo">Sandwiches</button>
+            <button class="texMexs btn btn-rojo">Tex-Mex</button>
+            <button class="platosEspeciales btn btn-rojo">Platos Especiales</button>
+        </div>
+        <!-- 28 productos de california donuts -->
+        <div class="productos">
+            <div class="producto" data-producto="burguer">
+                <img src="../img/Burgers/Burger_Clasica.PNG" alt="burger">
+                <h2>Burger Clasica</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan California, salsas, verduras,carne 125gr.,queso
+                    mozzarella y porción de papas.</p>
+                <p class="precio-menu">Precio: <span>20.00</span>Bs</p>
+                <a href="" data-id="1" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="burguer">
+                <img src="../img/Burgers/Burger_Americana.PNG" alt="burger">
+                <h2>Burger Americana</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan California, salsas, carne de 125gr , queso ,
+                    americano, tocino, cebolla, caramelizadas y papas frita.</p>
+                <p class="precio-menu">Precio: <span>35.00</span>Bs</p>
+                <a href="" data-id="2" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="burguer">
+                <img src="../img/Burgers/Burger_Doble.PNG" alt="burger">
+                <h2>Burger doble california</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan California, salsas, verduras, 2 carnes de 125gr c/u,
+                    queso mozzarella, tocino, huevo y papas fritas</p>
+                <p class="precio-menu">Precio: <span>40.00</span>Bs</p>
+                <a href="" data-id="3" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="burguer">
+                <img src="../img/Burgers/BURGUER CALIFORNIA.JPEG" alt="burger">
+                <h2>Burger california</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan California, salsas, verduras, carne 125gr, tocino,
+                    jamón, queso mozzarella, huevo y porción de papas.</p>
+                <p class="precio-menu">Precio: <span>30.00</span>Bs</p>
+                <a href="" data-id="4" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="burguer">
+                <img src="../img/Burgers/Burger_Junior.PNG" alt="burger">
+                <h2>Burger junior</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan California, salsas, carne 80gr., queso mozzarella y
+                    papas fritas</p>
+                <p class="precio-menu">Precio: <span>15.00</span>Bs</p>
+                <a href="" data-id="5" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="burguer">
+                <img src="../img/Burgers/Aros_De_Cebolla.PNG" alt="burger">
+                <h2>Aros de cebolla</h2>
+                <p style="height: 100px; overflow-y: scroll;">Rodajas de cebollas rebosadas y fritas</p>
+                <p class="precio-menu">Precio: <span>7.00</span>Bs</p>
+                <a href="" data-id="6" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="donut">
+                <img src="../img/Donuts/Donut_Pack_Especial8.PNG" alt="donut">
+                <h2>Donuts pack especial 8</h2>
+                <p style="height: 100px; overflow-y: scroll;">4 clásicos + 4 especiales ( glaceado, sabor y topping a
+                    eleccion)</p>
+                <p class="precio-menu">Precio: <span>44.00</span>Bs</p>
+                <a href="" data-id="7" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="donut">
+                <img src="../img/Donuts/Donuts_Bolitas.PNG" alt="donut">
+                <h2>Donuts bolitas</h2>
+                <p style="height: 100px; overflow-y: scroll;">Clásicas o personalizadas ( pedido anticipado para eventos
+                    y cumpleaños)</p>
+                <p class="precio-menu">Precio: <span>2.00</span>Bs</p>
+                <a href="" data-id="8" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="donut">
+                <img src="../img/Donuts/Donuts_Clasicos.PNG" alt="donut">
+                <h2>Donuts clasicos</h2>
+                <p style="height: 100px; overflow-y: scroll;">Glaseado y sabores a eleccion( vainilla, chocolate,
+                    frutilla, coco, naranja, uva)</p>
+                <p class="precio-menu">Precio: <span>5.00</span>Bs</p>
+                <a href="" data-id="9" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="donut">
+                <img src="../img/Donuts/Donuts_Especiales.PNG" alt="donut">
+                <h2>Donuts especiales</h2>
+                <p style="height: 100px; overflow-y: scroll;">Topping a eleccion coco, almendras confitadas, oreo,
+                    cereal inflado, chispas de colores o de chocolate,</p>
+                <p class="precio-menu">Precio: <span>6.00</span>Bs</p>
+                <a href="" data-id="10" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="donut">
+                <img src="../img/Donuts/Donuts_Pack_Especial10.PNG" alt="donut">
+                <h2>Donuts pack especial 10</h2>
+                <p style="height: 100px; overflow-y: scroll;">5 clásicos + 4 especiales + 1 relleno ( glaseado, sabor y
+                    topping a elección)</p>
+                <p class="precio-menu">Precio: <span>59.00</span>Bs</p>
+                <a href="" data-id="11" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="donut">
+                <img src="../img/Donuts/Donuts_Rellenas.PNG" alt="donut">
+                <h2>Donuts rellenos</h2>
+                <p style="height: 100px; overflow-y: scroll;">Crema pastelera y crema de dulce de leche</p>
+                <p class="precio-menu">Precio: <span>10.00</span>Bs</p>
+                <a href="" data-id="12" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="donut">
+                <img src="../img/Donuts/Porcion_Milhojas.PNG" alt="donut">
+                <h2>Porción milhojas</h2>
+                <p style="height: 100px; overflow-y: scroll;">Deliciosa porcion de mil hojas.</p>
+                <p class="precio-menu">Precio: <span>15.00</span>Bs</p>
+                <a href="" data-id="13" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="donut">
+                <img src="../img/Donuts/Torta_MilHojas.PNG" alt="donut">
+                <h2>Torta milhojas</h2>
+                <p style="height: 100px; overflow-y: scroll;">Rellena con dulce de leche y decorada con coco( 12
+                    persona)</p>
+                <p class="precio-menu">Precio: <span>180.00</span>Bs</p>
+                <a href="" data-id="14" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="sandwich">
+                <img src="../img/Sandwiches/Sandwich_Croque_Monsieur.PNG" alt="sandwich">
+                <h2>Sandwich croque - monsieur</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan miga, jamón, queso mozzarella y salsa bechamel</p>
+                <p class="precio-menu">Precio: <span>15.00</span>Bs</p>
+                <a href="" data-id="15" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="sandwich">
+                <img src="../img/Sandwiches/Sandwich_De_Huevo.PNG" alt="sandwich">
+                <h2>Sandwich de huevo</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan california, rodajas de tomate y huevo estrellado.</p>
+                <p class="precio-menu">Precio: <span>6.00</span>Bs</p>
+                <a href="" data-id="16" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="sandwich">
+                <img src="../img/Sandwiches/Sandwich_De_Pollo.PNG" alt="sandwich">
+                <h2>Sandwich de pollo</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan miga, pollo desmechado a la plancha y verduras</p>
+                <p class="precio-menu">Precio: <span>15.00</span>Bs</p>
+                <a href="" data-id="17" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="sandwich">
+                <img src="../img/Sandwiches/Sandwich_De_Res.PNG" alt="sandwich">
+                <h2>Sandwich de res</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan miga, filete a la plancha, queso mozzarella y
+                    verduras.</p>
+                <p class="precio-menu">Precio: <span>18.00</span>Bs</p>
+                <a href="" data-id="18" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="sandwich">
+                <img src="../img/Sandwiches/Sandwich_Mixto.PNG" alt="sandwich">
+                <h2>Sandwich mixto</h2>
+                <p style="height: 100px; overflow-y: scroll;">Pan miga, lonjas de jamón y queso mozzarella</p>
+                <p class="precio-menu">Precio: <span>10.00</span>Bs</p>
+                <a href="" data-id="19" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="texMex">
+                <img src="../img/Tex_Mex/Burrito.PNG" alt="Tex-Mex">
+                <h2>Burrito California</h2>
+                <p style="height: 100px; overflow-y: scroll;">Hojas de trigo enrrolladas con carne de taco, chili,
+                    lechuga y tomate</p>
+                <p class="precio-menu">Precio: <span>35.00</span>Bs</p>
+                <a href="" data-id="20" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="texMex">
+                <img src="../img/Tex_Mex/Quesadillas.PNG" alt="Tex-Mex">
+                <h2>Quesadilla California</h2>
+                <p style="height: 100px; overflow-y: scroll;">Hojas de trigo, carne de tacos, lonjas de jamón, tocino y
+                    queso mozzarella</p>
+                <p class="precio-menu">Precio: <span>35.00</span>Bs</p>
+                <a href="" data-id="21" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="texMex">
+                <img src="../img/Tex_Mex/Tacos.PNG" alt="Tex-Mex">
+                <h2>Burrito California</h2>
+                <p style="height: 100px; overflow-y: scroll;">Hojas de trigo enrrolladas con carne de taco, chili,
+                    lechuga y tomate</p>
+                <p class="precio-menu">Precio: <span>35.00</span>Bs</p>
+                <a href="" data-id="22" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="texMex">
+                <img src="../img/Tex_Mex/quesadilla clasica.jpeg" alt="Tex-Mex">
+                <h2>Quesadilla clasica</h2>
+                <p style="height: 100px; overflow-y: scroll;">Hojas de trigo rellenas de jamón y queso mozzarella</p>
+                <p class="precio-menu">Precio: <span>25.00</span>Bs</p>
+                <a href="" data-id="23" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="platosEspecial">
+                <img src="../img/Platos_Especiales/Chorellana.PNG" alt="Platos_Especial">
+                <h2>Chorrellana</h2>
+                <p style="height: 100px; overflow-y: scroll;">Filete de res, chorrellana, huevo estrellado, papas
+                    fritas.</p>
+                <p class="precio-menu">Precio: <span>20.00</span>Bs</p>
+                <a href="" data-id="24" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="platosEspecial">
+                <img src="../img/Platos_Especiales/Ensalada_Cesar.PNG" alt="Platos_Especial">
+                <h2>Ensalada cesar</h2>
+                <p style="height: 100px; overflow-y: scroll;">Cama de lechuga, filete de pollo a la plancha, jamón,
+                    croutons y salsa especial.</p>
+                <p class="precio-menu">Precio: <span>25.00</span>Bs</p>
+                <a href="" data-id="25" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="platosEspecial">
+                <img src="../img/Platos_Especiales/Lomo_A_LA_Paila.PNG" alt="Platos_Especial">
+                <h2>Lomo a la paila</h2>
+                <p style="height: 100px; overflow-y: scroll;">Filete de res sobre una cama de papas fritas, cubierto con
+                    caldo de cebolla coronado por un huevo estrellado y acompañado con rodajas de pan California. ( El
+                    picor del plato es a tu elección)</p>
+                <p class="precio-menu">Precio: <span>50.00</span>Bs</p>
+                <a href="" data-id="26" class="btn-add-cart">PEDIR</a>
+            </div>
+            <div class="producto" data-producto="platosEspecial">
+                <img src="../img/Platos_Especiales/Lomo_Al_Plato.PNG" alt="Platos_Especial">
+                <h2>Lomo al plato</h2>
+                <p style="height: 100px; overflow-y: scroll;">Filete de res, huevo estrellado, ensaladas, papas fritas.
+                </p>
+                <p class="precio-menu">Precio: <span>20.00</span>Bs</p>
+                <a href="" data-id="27" class="btn-add-cart">PEDIR</a>
+            </div>
+        </div>
+    </section>
+    <script src="../js/carrito.js"></script>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap-footer">
+            <div class="text-element-footer element-footer">
+                <h3>Restaurante</h3>
+                <p>
+                    Te esperamos en california donuts para que disfrutes de todo lo que tenemos para ofrecerte vuelve
+                    pronto!!.
+                </p>
+            </div>
+            <div class="text-element-footer element-footer">
+                <h5>Dirección</h5>
+                <ul>
+                    <li>Av. Independencia 481, Santa Cruz de la Sierra</li>
+                    <li>celular: <a href="https://wa.me/+591 62174000">+591 62174000</li>
+                </ul>
+            </div>
+            <div class="rrss-element-footer element-footer">
+                <h5>Redes Sociales</h5>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/CaliforniaDonutsBurgerSCZ/?locale=es_LA" target="_blank">
+                            <img src="../img/logo/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@californiadonutsburger" target="_blank">
+                            <img src="../img/logo/tik-tok.png" alt="tik tok">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/california_donuts_burgers/" target="_blank">
+                            <img src="../img/logo/instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/+591 62174000" target="_blank">
+                            <img src="../img/logo/whatsapp.png" alt="Whatsapp">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/maps/aQK4Lq9K4HSW4xu49">
+                            <img src="../img/logo/ubicacion.PNG" alt="Ubicacion de CALIFORNIA DONUTS">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-creds">
+            <div class="copy-creds">
+                <p>©2023 · Todos los derechos reservados.</p>
+            </div>
+            <div class="legal-creds">
+                <ul>
+                    <li><a href="">Política de Privacidad</a></li>
+                    <li><a href="">Plítica de Cookies</a></li>
+                    <li><a href="">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
